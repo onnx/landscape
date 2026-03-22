@@ -1,5 +1,5 @@
 landscape:
-  - category: Training Frameworks
+  - name: Training Frameworks
     subcategories:
       - name: Training Frameworks
         items:
@@ -18,7 +18,7 @@ landscape:
             logo: paddlepaddle.svg
             description: Baidu's deep learning framework with native ONNX export.
 
-  - category: Converters
+  - name: Converters
     subcategories:
       - name: Converters
         items:
@@ -37,7 +37,7 @@ landscape:
             logo: huggingface.svg
             description: Exports Transformers and Diffusers models to ONNX.
 
-  - category: Runtimes
+  - name: Runtimes
     subcategories:
       - name: Runtimes
         items:
@@ -56,7 +56,7 @@ landscape:
             logo: nvidia.svg
             description: High-performance deep learning inference SDK for NVIDIA GPUs.
 
-  - category: Compilers
+  - name: Compilers
     subcategories:
       - name: Compilers
         items:
@@ -75,7 +75,7 @@ landscape:
             logo: llvm.svg
             description: MLIR-based compiler for PyTorch models including ONNX export paths.
 
-  - category: Hardware & Accelerators
+  - name: Hardware & Accelerators
     subcategories:
       - name: Hardware & Accelerators
         items:
@@ -94,7 +94,7 @@ landscape:
             logo: intel.svg
             description: Habana Gaudi AI accelerators with ONNX training and inference support.
 
-  - category: Optimization
+  - name: Optimization
     subcategories:
       - name: Optimization
         items:
@@ -113,7 +113,7 @@ landscape:
             logo: onnxruntime.svg
             description: Quantize ONNX models to INT8/INT4 for reduced size and faster inference.
 
-  - category: Graph Manipulation
+  - name: Graph Manipulation
     subcategories:
       - name: Graph Manipulation
         items:
@@ -132,7 +132,7 @@ landscape:
             logo: onnx.svg
             description: Simplifies ONNX models by folding constants and eliminating redundant nodes.
 
-  - category: Visualization
+  - name: Visualization
     subcategories:
       - name: Visualization
         items:
@@ -151,7 +151,7 @@ landscape:
             logo: onnx.svg
             description: Open-source 3D visualization for ONNX model computation graphs.
 
-  - category: Model Hubs
+  - name: Model Hubs
     subcategories:
       - name: Model Hubs
         items:
@@ -170,7 +170,7 @@ landscape:
             logo: onnx.svg
             description: Pre-trained ONNX models for image classification, detection, and segmentation.
 
-  - category: Cloud Services
+  - name: Cloud Services
     subcategories:
       - name: Cloud Services
         items:
@@ -189,7 +189,7 @@ landscape:
             logo: googlecloud.svg
             description: Google Vertex AI supports ONNX model deployment on Google Cloud.
 
-  - category: Validation & Testing
+  - name: Validation & Testing
     subcategories:
       - name: Validation & Testing
         items:
@@ -208,7 +208,7 @@ landscape:
             logo: onnxruntime.svg
             description: Utilities for profiling, converting, and validating ONNX models with ORT.
 
-  - category: Members & Partners
+  - name: Members & Partners
     subcategories:
       - name: Members & Partners
         items:
