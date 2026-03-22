@@ -21,23 +21,19 @@ colors:
 grid_items_size: medium
 
 groups:
-  - name: Build & Convert
+  - name: Frameworks & Tools
     categories:
       - Training Frameworks
       - Converters
+      - Optimization
+      - Graph Manipulation
+      - Visualization
+      - Validation & Testing
   - name: Deploy & Run
     categories:
       - Runtimes
       - Compilers
       - Hardware & Accelerators
-  - name: Tools
-    categories:
-      - Optimization
-      - Graph Manipulation
-      - Visualization
-      - Validation & Testing
-  - name: Ecosystem
-    categories:
       - Model Hubs
       - Cloud Services
   - name: Members & Partners
