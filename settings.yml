@@ -21,15 +21,25 @@ colors:
 grid_items_size: medium
 
 groups:
-  - name: Build Model
+  - name: Build & Convert
     categories:
-      - Build Model
-  - name: Deploy Model
+      - Training Frameworks
+      - Converters
+  - name: Deploy & Run
     categories:
-      - Deploy Model
+      - Runtimes
+      - Compilers
+      - Hardware & Accelerators
   - name: Tools
     categories:
-      - Additional Tools
+      - Optimization
+      - Graph Manipulation
+      - Visualization
+      - Validation & Testing
+  - name: Ecosystem
+    categories:
+      - Model Hubs
+      - Cloud Services
   - name: Members & Partners
     categories:
       - Members & Partners
