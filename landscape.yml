@@ -1,7 +1,7 @@
 landscape:
   - category: Training Frameworks
     subcategories:
-      - subcategory: Training Frameworks
+      - name: Training Frameworks
         items:
           - name: PyTorch
             homepage_url: https://pytorch.org/docs/stable/onnx.html
@@ -20,7 +20,7 @@ landscape:
 
   - category: Converters
     subcategories:
-      - subcategory: Converters
+      - name: Converters
         items:
           - name: tf2onnx
             homepage_url: https://github.com/onnx/tensorflow-onnx
@@ -39,7 +39,7 @@ landscape:
 
   - category: Runtimes
     subcategories:
-      - subcategory: Runtimes
+      - name: Runtimes
         items:
           - name: ONNX Runtime
             homepage_url: https://github.com/microsoft/onnxruntime
@@ -58,7 +58,7 @@ landscape:
 
   - category: Compilers
     subcategories:
-      - subcategory: Compilers
+      - name: Compilers
         items:
           - name: ONNX-MLIR
             homepage_url: https://onnx.ai/onnx-mlir
@@ -77,7 +77,7 @@ landscape:
 
   - category: Hardware & Accelerators
     subcategories:
-      - subcategory: Hardware & Accelerators
+      - name: Hardware & Accelerators
         items:
           - name: Qualcomm AI Stack
             homepage_url: https://www.qualcomm.com/developer/artificial-intelligence
@@ -96,7 +96,7 @@ landscape:
 
   - category: Optimization
     subcategories:
-      - subcategory: Optimization
+      - name: Optimization
         items:
           - name: ONNX Optimizer
             homepage_url: https://github.com/onnx/optimizer
@@ -115,7 +115,7 @@ landscape:
 
   - category: Graph Manipulation
     subcategories:
-      - subcategory: Graph Manipulation
+      - name: Graph Manipulation
         items:
           - name: ONNX Script
             homepage_url: https://github.com/microsoft/onnxscript
@@ -134,7 +134,7 @@ landscape:
 
   - category: Visualization
     subcategories:
-      - subcategory: Visualization
+      - name: Visualization
         items:
           - name: Netron
             homepage_url: https://github.com/lutzroeder/Netron
@@ -153,7 +153,7 @@ landscape:
 
   - category: Model Hubs
     subcategories:
-      - subcategory: Model Hubs
+      - name: Model Hubs
         items:
           - name: ONNX Model Zoo
             homepage_url: https://github.com/onnx/models
@@ -172,7 +172,7 @@ landscape:
 
   - category: Cloud Services
     subcategories:
-      - subcategory: Cloud Services
+      - name: Cloud Services
         items:
           - name: Azure Machine Learning
             homepage_url: https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx
@@ -191,7 +191,7 @@ landscape:
 
   - category: Validation & Testing
     subcategories:
-      - subcategory: Validation & Testing
+      - name: Validation & Testing
         items:
           - name: ONNX Checker
             homepage_url: https://github.com/onnx/onnx
@@ -210,7 +210,7 @@ landscape:
 
   - category: Members & Partners
     subcategories:
-      - subcategory: Members & Partners
+      - name: Members & Partners
         items:
           - name: Microsoft
             homepage_url: https://microsoft.com
