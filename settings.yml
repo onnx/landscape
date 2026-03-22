@@ -35,6 +35,7 @@ groups:
 
 logos_viewbox:
   adjust: true
+  exclude: []
 
 social_networks:
   github: onnx/onnx
