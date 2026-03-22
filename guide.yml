@@ -1,0 +1,117 @@
+guide:
+  - category: Introduction
+    content: |
+      ## Welcome to the ONNX Landscape
+
+      ONNX (Open Neural Network Exchange) is an open format for representing machine learning models.
+      ONNX defines a common set of operators and a common file format so AI developers can use models
+      with a variety of frameworks, tools, runtimes, and compilers.
+
+      This landscape maps the ecosystem of tools, frameworks, runtimes, and organizations that support
+      ONNX, organized by where they fit in the ML workflow.
+
+  - category: Build Model
+    content: |
+      ## Build Model
+
+      The "Build Model" category covers tools and frameworks for creating and exporting models in ONNX format.
+
+      ### Frameworks & Converters
+
+      These tools allow you to train models in your preferred framework and convert or export them
+      to ONNX format:
+
+      - **PyTorch** — Native `torch.onnx` export, widely used for research and production
+      - **TensorFlow / Keras** — Use `tf2onnx` (tensorflow-onnx) to convert TF/Keras models
+      - **Scikit-Learn / XGBoost / LightGBM** — Convert classical ML models via ONNXMLTools
+      - **Hugging Face Optimum** — Export Transformers and Diffusers models to ONNX
+      - **PaddlePaddle** — Baidu's deep learning framework with ONNX export support
+
+      ### Cloud Services
+
+      Major cloud providers offer ONNX-compatible services for building and training models:
+
+      - **Azure Machine Learning** — AutoML can export models to ONNX format
+      - **Azure Cognitive Services** — Custom Vision exports ONNX models for Windows ML
+
+      ### Pre-Trained Models
+
+      Get started quickly using pre-trained ONNX models:
+
+      - **ONNX Model Zoo** — Official collection of pre-trained ONNX models for vision and language tasks
+      - **Hugging Face Hub** — Thousands of ONNX models ready to download and deploy
+
+  - category: Deploy Model
+    content: |
+      ## Deploy Model
+
+      Once you have an ONNX model, you can deploy it using any of a large number of inference
+      runtimes and hardware platforms.
+
+      ### Inference Runtimes
+
+      - **ONNX Runtime** — Microsoft's cross-platform runtime, the most widely used ONNX engine.
+        Supports CPU, CUDA, DirectML, TensorRT, OpenVINO, and many more execution providers.
+      - **Intel OpenVINO** — Optimized inference on Intel CPUs, integrated and discrete GPUs, VPUs
+      - **NVIDIA TensorRT** — High-performance inference on NVIDIA GPUs
+      - **Apache TVM** — Deep learning compiler stack that accepts ONNX models as input
+      - **ONNX-MLIR** — Compiles ONNX models using the MLIR compiler infrastructure
+
+      ### Hardware Platforms
+
+      ONNX is supported on a wide variety of hardware accelerators including:
+
+      - Cloud GPUs (NVIDIA, AMD)
+      - Mobile and edge SoCs (Qualcomm, MediaTek, ARM)
+      - Custom AI accelerators (Groq, Habana/Intel, Hailo, Graphcore, Furiosa)
+      - Embedded processors (Cadence, CEVA, Synopsys, NXP)
+
+  - category: Additional Tools
+    content: |
+      ## Additional Tools
+
+      ### Optimize
+
+      After converting or training a model, you can optimize it for deployment:
+
+      - **ONNX Optimizer** — Perform graph-level optimizations: constant folding, operator fusion,
+        dead code elimination, and more
+      - **ONNX Runtime Quantization** — Reduce model size and improve inference speed by quantizing
+        weights and activations to INT8 or lower precision
+
+      ### Visualize
+
+      Understanding your model structure is important for debugging and optimization:
+
+      - **Netron** — The most popular viewer for ONNX and other ML model formats, available as
+        a web app and desktop application
+      - **VisualDL** — PaddlePaddle's visualization tool with ONNX graph support
+      - **Zetane Viewer** — 3D visualization for ONNX model computation graphs
+
+      ### Validate & Test
+
+      Ensure your ONNX models are spec-compliant and portable:
+
+      - **ONNX Checker** — Built-in tool (`onnx.checker.check_model`) for validating models
+      - **ONNX Backend Test** — Standardized test suite for runtime compliance verification
+
+  - category: Members & Partners
+    content: |
+      ## ONNX Members & Partners
+
+      The ONNX project is governed by a [steering committee](https://github.com/onnx/onnx/blob/main/community/steering-committee.md)
+      and supported by a broad ecosystem of member companies and partners.
+
+      ### Steering Committee
+
+      The ONNX steering committee provides technical leadership and governance for the project.
+      Current members include representatives from Microsoft, Meta, AMD, Arm, AWS, Baidu, IBM,
+      Intel, NVIDIA, and Qualcomm.
+
+      ### Partners
+
+      ONNX partners contribute to the project and integrate ONNX support into their products,
+      hardware, and services. Partners span the full spectrum from chip vendors and cloud providers
+      to software frameworks and enterprise AI platforms.
+
+      To learn more about joining the ONNX community, visit [onnx.ai](https://onnx.ai).

@@ -1,0 +1,64 @@
+name: Build and deploy landscape
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: landscape
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/cncf/landscape2
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tar (needed for cache)
+        run: apk add --update --no-progress tar
+
+      - name: Cache landscape build
+        uses: actions/cache@v4
+        with:
+          path: /tmp/landscape-cache
+          key: landscape-cache-${{ github.sha }}
+          restore-keys: landscape-cache-
+
+      - name: Build landscape
+        env:
+          GITHUB_TOKENS: ${{ secrets.LANDSCAPE_GITHUB_TOKENS }}
+          RUST_LOG: landscape2=info
+        run: |
+          landscape2 build \
+            --data-file landscape.yml \
+            --settings-file settings.yml \
+            --guide-file guide.yml \
+            --logos-path hosted_logos \
+            --cache-dir /tmp/landscape-cache \
+            --output-dir /tmp/landscape-output
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/landscape-output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,228 @@
+landscape:
+  - category: Training Frameworks
+    subcategories:
+      - subcategory: Training Frameworks
+        items:
+          - name: PyTorch
+            homepage_url: https://pytorch.org/docs/stable/onnx.html
+            logo: pytorch.svg
+            description: Native torch.onnx export to ONNX format.
+
+          - name: TensorFlow
+            homepage_url: https://github.com/onnx/tensorflow-onnx
+            logo: tensorflow.svg
+            description: TensorFlow and Keras models converted to ONNX via tf2onnx.
+
+          - name: PaddlePaddle
+            homepage_url: https://github.com/PaddlePaddle/paddle-onnx
+            logo: paddlepaddle.svg
+            description: Baidu's deep learning framework with native ONNX export.
+
+  - category: Converters
+    subcategories:
+      - subcategory: Converters
+        items:
+          - name: tf2onnx
+            homepage_url: https://github.com/onnx/tensorflow-onnx
+            logo: tensorflow.svg
+            description: Converts TensorFlow, Keras, and TFLite models to ONNX.
+
+          - name: ONNXMLTools
+            homepage_url: https://github.com/onnx/onnxmltools
+            logo: onnx.svg
+            description: Converts scikit-learn, XGBoost, LightGBM, and CatBoost models to ONNX.
+
+          - name: Hugging Face Optimum
+            homepage_url: https://huggingface.co/docs/optimum/exporters/onnx/usage_guides/export_a_model
+            logo: huggingface.svg
+            description: Exports Transformers and Diffusers models to ONNX.
+
+  - category: Runtimes
+    subcategories:
+      - subcategory: Runtimes
+        items:
+          - name: ONNX Runtime
+            homepage_url: https://github.com/microsoft/onnxruntime
+            logo: onnxruntime.svg
+            description: Cross-platform, high-performance ML inference and training accelerator by Microsoft.
+
+          - name: Intel OpenVINO
+            homepage_url: https://docs.openvino.ai/
+            logo: intel.svg
+            description: Intel's toolkit for optimizing and deploying ONNX models on Intel hardware.
+
+          - name: NVIDIA TensorRT
+            homepage_url: https://developer.nvidia.com/tensorrt
+            logo: nvidia.svg
+            description: High-performance deep learning inference SDK for NVIDIA GPUs.
+
+  - category: Compilers
+    subcategories:
+      - subcategory: Compilers
+        items:
+          - name: ONNX-MLIR
+            homepage_url: https://onnx.ai/onnx-mlir
+            logo: onnx.svg
+            description: Compiles ONNX models to native code using the MLIR compiler infrastructure.
+
+          - name: Apache TVM
+            homepage_url: https://tvm.apache.org/
+            logo: apachetvm.svg
+            description: Open deep learning compiler stack that ingests ONNX models.
+
+          - name: Torch-MLIR
+            homepage_url: https://github.com/llvm/torch-mlir
+            logo: llvm.svg
+            description: MLIR-based compiler for PyTorch models including ONNX export paths.
+
+  - category: Hardware & Accelerators
+    subcategories:
+      - subcategory: Hardware & Accelerators
+        items:
+          - name: Qualcomm AI Stack
+            homepage_url: https://www.qualcomm.com/developer/artificial-intelligence
+            logo: qualcomm.svg
+            description: ONNX inference on Qualcomm Snapdragon mobile and edge platforms.
+
+          - name: Groq
+            homepage_url: https://groq.com/products/
+            logo: groq.svg
+            description: Groq LPU supports ONNX model deployment for high-throughput inference.
+
+          - name: Intel Habana Gaudi
+            homepage_url: https://habana.ai/
+            logo: intel.svg
+            description: Habana Gaudi AI accelerators with ONNX training and inference support.
+
+  - category: Optimization
+    subcategories:
+      - subcategory: Optimization
+        items:
+          - name: ONNX Optimizer
+            homepage_url: https://github.com/onnx/optimizer
+            logo: onnx.svg
+            description: Graph-level optimizations including constant folding and operator fusion.
+
+          - name: Microsoft Olive
+            homepage_url: https://github.com/microsoft/Olive
+            logo: microsoft.svg
+            description: Hardware-aware model optimization toolchain targeting ONNX Runtime.
+
+          - name: ORT Quantization
+            homepage_url: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html
+            logo: onnxruntime.svg
+            description: Quantize ONNX models to INT8/INT4 for reduced size and faster inference.
+
+  - category: Graph Manipulation
+    subcategories:
+      - subcategory: Graph Manipulation
+        items:
+          - name: ONNX Script
+            homepage_url: https://github.com/microsoft/onnxscript
+            logo: microsoft.svg
+            description: Author, transform, and rewrite ONNX graphs and functions using Python.
+
+          - name: NVIDIA Graph Surgeon
+            homepage_url: https://github.com/NVIDIA/TensorRT/tree/main/tools/onnx-graphsurgeon
+            logo: nvidia.svg
+            description: Graph manipulation library for modifying ONNX models before TensorRT compilation.
+
+          - name: onnx-simplifier
+            homepage_url: https://github.com/daquexian/onnx-simplifier
+            logo: onnx.svg
+            description: Simplifies ONNX models by folding constants and eliminating redundant nodes.
+
+  - category: Visualization
+    subcategories:
+      - subcategory: Visualization
+        items:
+          - name: Netron
+            homepage_url: https://github.com/lutzroeder/Netron
+            logo: netron.svg
+            description: The most popular viewer for ONNX and other ML model formats.
+
+          - name: VisualDL
+            homepage_url: https://github.com/PaddlePaddle/VisualDL
+            logo: paddlepaddle.svg
+            description: PaddlePaddle's visualization tool with ONNX model graph support.
+
+          - name: Zetane Viewer
+            homepage_url: https://github.com/zetane/viewer
+            logo: onnx.svg
+            description: Open-source 3D visualization for ONNX model computation graphs.
+
+  - category: Model Hubs
+    subcategories:
+      - subcategory: Model Hubs
+        items:
+          - name: ONNX Model Zoo
+            homepage_url: https://github.com/onnx/models
+            logo: onnx.svg
+            description: Official collection of pre-trained ONNX models for vision, language, and more.
+
+          - name: Hugging Face Hub
+            homepage_url: https://huggingface.co/models?library=onnx
+            logo: huggingface.svg
+            description: Thousands of ready-to-use ONNX models hosted on Hugging Face Hub.
+
+          - name: ONNX Model Zoo - Vision
+            homepage_url: https://github.com/onnx/models#vision
+            logo: onnx.svg
+            description: Pre-trained ONNX models for image classification, detection, and segmentation.
+
+  - category: Cloud Services
+    subcategories:
+      - subcategory: Cloud Services
+        items:
+          - name: Azure Machine Learning
+            homepage_url: https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx
+            logo: microsoftazure.svg
+            description: Azure ML AutoML exports models to ONNX for cross-platform deployment.
+
+          - name: AWS SageMaker
+            homepage_url: https://docs.aws.amazon.com/sagemaker/
+            logo: amazonaws.svg
+            description: Amazon SageMaker supports ONNX model training and deployment.
+
+          - name: Google Vertex AI
+            homepage_url: https://cloud.google.com/vertex-ai
+            logo: googlecloud.svg
+            description: Google Vertex AI supports ONNX model deployment on Google Cloud.
+
+  - category: Validation & Testing
+    subcategories:
+      - subcategory: Validation & Testing
+        items:
+          - name: ONNX Checker
+            homepage_url: https://github.com/onnx/onnx
+            logo: onnx.svg
+            description: Built-in model validator for checking ONNX spec compliance.
+
+          - name: ONNX Backend Test
+            homepage_url: https://github.com/onnx/onnx/tree/main/onnx/backend/test
+            logo: onnx.svg
+            description: Standardized test suite for verifying ONNX runtime compliance.
+
+          - name: onnxruntime-tools
+            homepage_url: https://github.com/microsoft/onnxruntime/tree/main/onnxruntime/python/tools
+            logo: onnxruntime.svg
+            description: Utilities for profiling, converting, and validating ONNX models with ORT.
+
+  - category: Members & Partners
+    subcategories:
+      - subcategory: Members & Partners
+        items:
+          - name: Microsoft
+            homepage_url: https://microsoft.com
+            logo: microsoft.svg
+            description: Co-creator of ONNX and developer of ONNX Runtime.
+
+          - name: Meta
+            homepage_url: https://ai.facebook.com
+            logo: meta.svg
+            description: Co-creator of ONNX along with Microsoft.
+
+          - name: Intel
+            homepage_url: https://www.intel.com/ai
+            logo: intel.svg
+            description: Intel contributes to ONNX and provides OpenVINO for ONNX inference.

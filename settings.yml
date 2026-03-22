@@ -1,0 +1,61 @@
+foundation: ONNX
+
+url: https://landscape.onnx.ai
+
+images:
+  favicon: https://onnx.ai/images/onnx-favicon.png
+  footer_logo: https://onnx.ai/images/ONNX-Logo.svg
+  header_logo: https://onnx.ai/images/ONNX-Logo.svg
+  open_graph: https://onnx.ai/images/ONNX-Logo.svg
+
+colors:
+  color1: "rgba(0, 107, 182, 1)"
+  color2: "rgba(0, 75, 135, 1)"
+  color3: "rgba(255, 255, 255, 1)"
+  color4: "rgba(0, 107, 182, 0.1)"
+  color5: "rgba(0, 107, 182, 0.5)"
+  color6: "rgba(0, 107, 182, 0.8)"
+
+grid_items_size: medium
+
+groups:
+  - name: Build Model
+    categories:
+      - Build Model
+  - name: Deploy Model
+    categories:
+      - Deploy Model
+  - name: Tools
+    categories:
+      - Additional Tools
+  - name: Members & Partners
+    categories:
+      - Members & Partners
+
+logos_viewbox:
+  adjust: true
+
+social_networks:
+  github: onnx/onnx
+  twitter: onnxai
+
+upcoming_event:
+  title: ONNX Community Meeting
+  details: Connect with the ONNX community
+  url: https://onnx.ai/calendar.html
+
+links:
+  contribution: https://github.com/onnx/onnx/blob/main/CONTRIBUTING.md
+  license: https://github.com/onnx/onnx/blob/main/LICENSE
+
+footer:
+  links:
+    - name: onnx.ai
+      url: https://onnx.ai
+    - name: GitHub
+      url: https://github.com/onnx/onnx
+    - name: Slack
+      url: https://onnx.ai/slack.html
+    - name: Mailing List
+      url: https://onnx.ai/mailinglists.html
+  text: "The ONNX landscape is maintained by the ONNX community."
