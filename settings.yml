@@ -15,6 +15,7 @@ colors:
   color4: "rgba(0, 107, 182, 0.1)"
   color5: "rgba(0, 107, 182, 0.5)"
   color6: "rgba(0, 107, 182, 0.8)"
+  color7: "rgba(0, 107, 182, 0.2)"
 
 grid_items_size: medium
 
