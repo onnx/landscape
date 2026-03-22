@@ -42,7 +42,7 @@ social_networks:
   twitter: onnxai
 
 upcoming_event:
-  title: ONNX Community Meeting
+  name: ONNX Community Meeting
   details: Connect with the ONNX community
   url: https://onnx.ai/calendar.html
 
