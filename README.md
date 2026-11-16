@@ -8,7 +8,6 @@ The [ONNX Landscape](https://onnx.ai/landscape/) maps the ecosystem of framework
 landscape.yml      # All landscape items, organized by category
 settings.yml       # Appearance and site configuration
 guide.yml          # Guide content shown on the landscape site
-CNAME              # Intended custom domain (requires DNS and Pages setup)
 hosted_logos/      # SVG logos and clearly labeled text placeholders
 scripts/           # Input and generated-site checks
 fetch-logos.sh     # Legacy helper for fetching a subset of logos
@@ -49,14 +48,7 @@ Open `http://localhost:8000/landscape/`. The parent directory mirrors the config
 
 ## Deployment
 
-Pushes to `main` trigger the GitHub Actions workflow, which builds and deploys the site to [onnx.ai/landscape/](https://onnx.ai/landscape/). Pull requests run the same build checks without deploying.
-
-The intended `landscape.onnx.ai` domain requires both DNS and GitHub Pages configuration. A file named `CNAME` alone does not configure the domain for a Pages Actions deployment. An administrator must configure the custom domain in the repository's Pages settings, set the DNS record, and wait for HTTPS provisioning. After verifying the domain, update `url` in `settings.yml`, remove its `/landscape` `base_path`, and update the links in this README.
-
-**DNS record:**
-```
-landscape.onnx.ai  CNAME  onnx.github.io
-```
+Pushes to `main` trigger the GitHub Actions workflow, which builds and deploys the site to GitHub Pages at [onnx.ai/landscape/](https://onnx.ai/landscape/). The default repository address, `onnx.github.io/landscape/`, redirects there because the ONNX organization site uses `onnx.ai`. Pull requests run the same build checks without deploying.
 
 ## Optional secrets
 
