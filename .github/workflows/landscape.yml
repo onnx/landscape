@@ -4,15 +4,14 @@ on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: landscape
+  group: landscape-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -24,8 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Install tar (needed for cache)
-        run: apk add --update --no-progress tar
+      - name: Install build-check dependencies
+        run: apk add --update --no-progress tar python3 py3-yaml
+
+      - name: Check input logos
+        run: python3 scripts/check-landscape.py
+
+      - name: Validate landscape configuration
+        run: |
+          landscape2 validate data --data-file landscape.yml
+          landscape2 validate settings --settings-file settings.yml
+          landscape2 validate guide --guide-file guide.yml
 
       - name: Cache landscape build
         uses: actions/cache@v5
@@ -36,7 +44,7 @@ jobs:
 
       - name: Build landscape
         env:
-          GITHUB_TOKENS: ${{ secrets.LANDSCAPE_GITHUB_TOKENS }}
+          GITHUB_TOKENS: ${{ github.event_name != 'pull_request' && secrets.LANDSCAPE_GITHUB_TOKENS || '' }}
           RUST_LOG: landscape2=info
         run: |
           landscape2 build \
@@ -47,6 +55,9 @@ jobs:
             --cache-dir /tmp/landscape-cache \
             --output-dir /tmp/landscape-output
 
+      - name: Check generated landscape
+        run: python3 scripts/check-landscape.py --built-dir /tmp/landscape-output
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -54,7 +65,11 @@ jobs:
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
