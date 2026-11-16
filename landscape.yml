@@ -5,17 +5,17 @@ landscape:
         items:
           - name: PyTorch
             homepage_url: https://pytorch.org/docs/stable/onnx.html
-            logo: hosted_logos/pytorch.svg
+            logo: pytorch.svg
             description: Native torch.onnx export to ONNX format.
 
           - name: TensorFlow
             homepage_url: https://github.com/onnx/tensorflow-onnx
-            logo: hosted_logos/tensorflow.svg
+            logo: tensorflow.svg
             description: TensorFlow and Keras models converted to ONNX via tf2onnx.
 
           - name: PaddlePaddle
             homepage_url: https://github.com/PaddlePaddle/paddle-onnx
-            logo: hosted_logos/paddlepaddle.svg
+            logo: paddlepaddle.svg
             description: Baidu's deep learning framework with native ONNX export.
 
   - name: Converters
@@ -24,17 +24,25 @@ landscape:
         items:
           - name: tf2onnx
             homepage_url: https://github.com/onnx/tensorflow-onnx
-            logo: hosted_logos/tensorflow.svg
+            repo_url: https://github.com/onnx/tensorflow-onnx
+            logo: tensorflow.svg
             description: Converts TensorFlow, Keras, and TFLite models to ONNX.
+
+          - name: sklearn-onnx
+            homepage_url: https://onnx.ai/sklearn-onnx/
+            repo_url: https://github.com/onnx/sklearn-onnx
+            logo: onnx.svg
+            description: Converts scikit-learn models and pipelines to ONNX.
 
           - name: ONNXMLTools
             homepage_url: https://github.com/onnx/onnxmltools
-            logo: hosted_logos/onnx.svg
+            repo_url: https://github.com/onnx/onnxmltools
+            logo: onnx.svg
             description: Converts scikit-learn, XGBoost, LightGBM, and CatBoost models to ONNX.
 
           - name: Hugging Face Optimum
             homepage_url: https://huggingface.co/docs/optimum/exporters/onnx/usage_guides/export_a_model
-            logo: hosted_logos/huggingface.svg
+            logo: huggingface.svg
             description: Exports Transformers and Diffusers models to ONNX.
 
   - name: Runtimes
@@ -43,17 +51,24 @@ landscape:
         items:
           - name: ONNX Runtime
             homepage_url: https://github.com/microsoft/onnxruntime
-            logo: hosted_logos/onnxruntime.svg
+            repo_url: https://github.com/microsoft/onnxruntime
+            logo: onnxruntime.svg
             description: Cross-platform, high-performance ML inference and training accelerator by Microsoft.
+
+          - name: ONNX Runtime GenAI
+            homepage_url: https://github.com/microsoft/onnxruntime-genai
+            repo_url: https://github.com/microsoft/onnxruntime-genai
+            logo: onnxruntime.svg
+            description: Generative AI extensions for running models with ONNX Runtime.
 
           - name: Intel OpenVINO
             homepage_url: https://docs.openvino.ai/
-            logo: hosted_logos/intel.svg
+            logo: intel.svg
             description: Intel's toolkit for optimizing and deploying ONNX models on Intel hardware.
 
           - name: NVIDIA TensorRT
             homepage_url: https://developer.nvidia.com/tensorrt
-            logo: hosted_logos/nvidia.svg
+            logo: nvidia.svg
             description: High-performance deep learning inference SDK for NVIDIA GPUs.
 
   - name: Compilers
@@ -62,18 +77,19 @@ landscape:
         items:
           - name: ONNX-MLIR
             homepage_url: https://onnx.ai/onnx-mlir
-            logo: hosted_logos/onnx.svg
+            logo: onnx.svg
             description: Compiles ONNX models to native code using the MLIR compiler infrastructure.
 
           - name: Apache TVM
             homepage_url: https://tvm.apache.org/
-            logo: hosted_logos/apachetvm.svg
+            logo: apachetvm.svg
             description: Open deep learning compiler stack that ingests ONNX models.
 
           - name: Torch-MLIR
-            homepage_url: https://github.com/llvm/torch-mlir
-            logo: hosted_logos/llvm.svg
-            description: MLIR-based compiler for PyTorch models including ONNX export paths.
+            homepage_url: https://github.com/llvm/torch-mlir/blob/main/docs/importers/onnx_importer.md
+            repo_url: https://github.com/llvm/torch-mlir
+            logo: llvm.svg
+            description: MLIR-based compiler infrastructure with an importer for ONNX models.
 
   - name: Hardware & Accelerators
     subcategories:
@@ -81,17 +97,17 @@ landscape:
         items:
           - name: Qualcomm AI Stack
             homepage_url: https://www.qualcomm.com/developer/artificial-intelligence
-            logo: hosted_logos/qualcomm.svg
+            logo: qualcomm.svg
             description: ONNX inference on Qualcomm Snapdragon mobile and edge platforms.
 
           - name: Groq
             homepage_url: https://groq.com/products/
-            logo: hosted_logos/groq.svg
-            description: Groq LPU supports ONNX model deployment for high-throughput inference.
+            logo: groq.svg
+            description: AI inference hardware and services; consult Groq documentation for supported models and deployment options.
 
           - name: Intel Habana Gaudi
             homepage_url: https://habana.ai/
-            logo: hosted_logos/intel.svg
+            logo: intel.svg
             description: Habana Gaudi AI accelerators with ONNX training and inference support.
 
   - name: Optimization
@@ -100,17 +116,17 @@ landscape:
         items:
           - name: ONNX Optimizer
             homepage_url: https://github.com/onnx/optimizer
-            logo: hosted_logos/onnx.svg
-            description: Graph-level optimizations including constant folding and operator fusion.
+            logo: onnx.svg
+            description: Reusable graph optimization passes including fusion and elimination.
 
           - name: Microsoft Olive
             homepage_url: https://github.com/microsoft/Olive
-            logo: hosted_logos/microsoft.svg
+            logo: microsoft.svg
             description: Hardware-aware model optimization toolchain targeting ONNX Runtime.
 
           - name: ORT Quantization
             homepage_url: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html
-            logo: hosted_logos/onnxruntime.svg
+            logo: onnxruntime.svg
             description: Quantize ONNX models to INT8/INT4 for reduced size and faster inference.
 
   - name: Graph Manipulation
@@ -119,17 +135,24 @@ landscape:
         items:
           - name: ONNX Script
             homepage_url: https://github.com/microsoft/onnxscript
-            logo: hosted_logos/microsoft.svg
+            repo_url: https://github.com/microsoft/onnxscript
+            logo: microsoft.svg
             description: Author, transform, and rewrite ONNX graphs and functions using Python.
+
+          - name: ONNX IR
+            homepage_url: https://onnx.ai/ir-py/
+            repo_url: https://github.com/onnx/ir-py
+            logo: onnx.svg
+            description: Python in-memory representation for constructing, analyzing, and transforming ONNX models.
 
           - name: NVIDIA Graph Surgeon
             homepage_url: https://github.com/NVIDIA/TensorRT/tree/main/tools/onnx-graphsurgeon
-            logo: hosted_logos/nvidia.svg
+            logo: nvidia.svg
             description: Graph manipulation library for modifying ONNX models before TensorRT compilation.
 
           - name: onnx-simplifier
             homepage_url: https://github.com/daquexian/onnx-simplifier
-            logo: hosted_logos/onnx.svg
+            logo: onnx.svg
             description: Simplifies ONNX models by folding constants and eliminating redundant nodes.
 
   - name: Visualization
@@ -138,18 +161,19 @@ landscape:
         items:
           - name: Netron
             homepage_url: https://github.com/lutzroeder/Netron
-            logo: hosted_logos/netron.svg
-            description: The most popular viewer for ONNX and other ML model formats.
+            repo_url: https://github.com/lutzroeder/Netron
+            logo: netron.svg
+            description: Visualize ONNX and other machine learning model formats in a browser or desktop app.
 
           - name: VisualDL
             homepage_url: https://github.com/PaddlePaddle/VisualDL
-            logo: hosted_logos/paddlepaddle.svg
+            logo: paddlepaddle.svg
             description: PaddlePaddle's visualization tool with ONNX model graph support.
 
           - name: Zetane Viewer
             homepage_url: https://github.com/zetane/viewer
-            logo: hosted_logos/onnx.svg
-            description: Open-source 3D visualization for ONNX model computation graphs.
+            logo: onnx.svg
+            description: Free viewer for exploring ONNX model graphs and tensors in 3D.
 
   - name: Model Hubs
     subcategories:
@@ -157,17 +181,17 @@ landscape:
         items:
           - name: ONNX Model Zoo
             homepage_url: https://github.com/onnx/models
-            logo: hosted_logos/onnx.svg
+            logo: onnx.svg
             description: Official collection of pre-trained ONNX models for vision, language, and more.
 
           - name: Hugging Face Hub
             homepage_url: https://huggingface.co/models?library=onnx
-            logo: hosted_logos/huggingface.svg
+            logo: huggingface.svg
             description: Thousands of ready-to-use ONNX models hosted on Hugging Face Hub.
 
           - name: ONNX Model Zoo - Vision
             homepage_url: https://github.com/onnx/models#vision
-            logo: hosted_logos/onnx.svg
+            logo: onnx.svg
             description: Pre-trained ONNX models for image classification, detection, and segmentation.
 
   - name: Cloud Services
@@ -175,329 +199,334 @@ landscape:
       - name: Cloud Services
         items:
           - name: Azure Machine Learning
-            homepage_url: https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx
-            logo: hosted_logos/microsoftazure.svg
-            description: Azure ML AutoML exports models to ONNX for cross-platform deployment.
+            homepage_url: https://learn.microsoft.com/en-us/azure/machine-learning/concept-onnx
+            logo: microsoftazure.svg
+            description: Azure ML supports ONNX model conversion and deployment, including export for supported AutoML models.
 
           - name: AWS SageMaker
             homepage_url: https://docs.aws.amazon.com/sagemaker/
-            logo: hosted_logos/amazonaws.svg
+            logo: amazonaws.svg
             description: Amazon SageMaker supports ONNX model training and deployment.
 
           - name: Google Vertex AI
-            homepage_url: https://cloud.google.com/vertex-ai
-            logo: hosted_logos/googlecloud.svg
-            description: Google Vertex AI supports ONNX model deployment on Google Cloud.
+            homepage_url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/using-nvidia-triton
+            logo: googlecloud.svg
+            description: Vertex AI endpoints can serve ONNX models using a Triton custom container.
 
   - name: Validation & Testing
     subcategories:
       - name: Validation & Testing
         items:
           - name: ONNX Checker
-            homepage_url: https://github.com/onnx/onnx
-            logo: hosted_logos/onnx.svg
+            homepage_url: https://onnx.ai/onnx/api/checker.html
+            logo: onnx.svg
             description: Built-in model validator for checking ONNX spec compliance.
+
+          - name: ONNX Shape Inference
+            homepage_url: https://onnx.ai/onnx/repo-docs/ShapeInference.html
+            logo: onnx.svg
+            description: Infer available shape and type information for values in ONNX graphs.
 
           - name: ONNX Backend Test
             homepage_url: https://github.com/onnx/onnx/tree/main/onnx/backend/test
-            logo: hosted_logos/onnx.svg
+            logo: onnx.svg
             description: Standardized test suite for verifying ONNX runtime compliance.
 
           - name: onnxruntime-tools
             homepage_url: https://github.com/microsoft/onnxruntime/tree/main/onnxruntime/python/tools
-            logo: hosted_logos/onnxruntime.svg
+            logo: onnxruntime.svg
             description: Utilities for profiling, converting, and validating ONNX models with ORT.
 
-  - name: Members & Partners
+  - name: Ecosystem Organizations
     subcategories:
-      - name: Members & Partners
+      - name: Ecosystem Organizations
         items:
           - name: ABBYY
             homepage_url: https://www.abbyy.com
-            logo: hosted_logos/abbyy.svg
-            description: ONNX ecosystem member.
+            logo: abbyy.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Aizon
             homepage_url: https://aizon.ai
-            logo: hosted_logos/aizon.svg
-            description: ONNX ecosystem member.
+            logo: aizon.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Alibaba
             homepage_url: https://www.alibabagroup.com
-            logo: hosted_logos/alibaba.svg
-            description: ONNX ecosystem member.
+            logo: alibaba.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: AMD
             homepage_url: https://www.amd.com
-            logo: hosted_logos/amd.svg
-            description: ONNX ecosystem member.
+            logo: amd.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Arm
             homepage_url: https://www.arm.com
-            logo: hosted_logos/arm.svg
-            description: ONNX ecosystem member.
+            logo: arm.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: AWS
             homepage_url: https://aws.amazon.com
-            logo: hosted_logos/amazonaws.svg
-            description: ONNX ecosystem member.
+            logo: amazonaws.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: AXera
             homepage_url: https://www.axera-tech.com
-            logo: hosted_logos/axera.svg
-            description: ONNX ecosystem member.
+            logo: axera.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Baidu
             homepage_url: https://www.baidu.com
-            logo: hosted_logos/baidu.svg
-            description: ONNX ecosystem member.
+            logo: baidu.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Beckhoff
             homepage_url: https://www.beckhoff.com
-            logo: hosted_logos/beckhoff.svg
-            description: ONNX ecosystem member.
+            logo: beckhoff.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: BITMAIN
             homepage_url: https://www.bitmain.com
-            logo: hosted_logos/bitmain.svg
-            description: ONNX ecosystem member.
+            logo: bitmain.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Cadence
             homepage_url: https://www.cadence.com
-            logo: hosted_logos/cadence.svg
-            description: ONNX ecosystem member.
+            logo: cadence.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: CEVA
             homepage_url: https://www.ceva-dsp.com
-            logo: hosted_logos/ceva.svg
-            description: ONNX ecosystem member.
+            logo: ceva.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: ClearBlade
             homepage_url: https://www.clearblade.com
-            logo: hosted_logos/clearblade.svg
-            description: ONNX ecosystem member.
+            logo: clearblade.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Datakalab
             homepage_url: https://datakalab.com
-            logo: hosted_logos/datakalab.svg
-            description: ONNX ecosystem member.
+            logo: datakalab.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Meta
             homepage_url: https://ai.meta.com
-            logo: hosted_logos/meta.svg
+            logo: meta.svg
             description: Co-creator of ONNX.
 
           - name: Furiosa
             homepage_url: https://furiosa.ai
-            logo: hosted_logos/furiosaai.svg
-            description: ONNX ecosystem member.
+            logo: furiosaai.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Graiphic
             homepage_url: https://graiphic.io
-            logo: hosted_logos/graiphic.svg
-            description: ONNX ecosystem member.
+            logo: graiphic.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Graphcore
             homepage_url: https://www.graphcore.ai
-            logo: hosted_logos/graphcore.svg
-            description: ONNX ecosystem member.
+            logo: graphcore.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Groq
             homepage_url: https://groq.com
-            logo: hosted_logos/groq.svg
-            description: ONNX ecosystem member.
+            logo: groq.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Habana
             homepage_url: https://habana.ai
-            logo: hosted_logos/habana.svg
-            description: ONNX ecosystem member.
+            logo: habana.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Hailo
             homepage_url: https://hailo.ai
-            logo: hosted_logos/hailo.svg
-            description: ONNX ecosystem member.
+            logo: hailo.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Hewlett Packard
             homepage_url: https://www.hp.com
-            logo: hosted_logos/hp.svg
-            description: ONNX ecosystem member.
+            logo: hp.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Huawei
             homepage_url: https://www.huawei.com
-            logo: hosted_logos/huawei.svg
-            description: ONNX ecosystem member.
+            logo: huawei.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Hugging Face
             homepage_url: https://huggingface.co
-            logo: hosted_logos/huggingface.svg
-            description: ONNX ecosystem member.
+            logo: huggingface.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: IBM
             homepage_url: https://www.ibm.com
-            logo: hosted_logos/ibm.svg
-            description: ONNX ecosystem member.
+            logo: ibm.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Idein
             homepage_url: https://idein.jp
-            logo: hosted_logos/idein.svg
-            description: ONNX ecosystem member.
+            logo: idein.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Intel
             homepage_url: https://www.intel.com/ai
-            logo: hosted_logos/intel.svg
+            logo: intel.svg
             description: ONNX ecosystem member and OpenVINO developer.
 
           - name: Kalray
             homepage_url: https://www.kalrayinc.com
-            logo: hosted_logos/kalray.svg
-            description: ONNX ecosystem member.
+            logo: kalray.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: MathWorks
             homepage_url: https://www.mathworks.com
-            logo: hosted_logos/mathworks.svg
-            description: ONNX ecosystem member.
+            logo: mathworks.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Maxar
             homepage_url: https://www.maxar.com
-            logo: hosted_logos/maxar.svg
-            description: ONNX ecosystem member.
+            logo: maxar.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: MediaTek
             homepage_url: https://www.mediatek.com
-            logo: hosted_logos/mediatek.svg
-            description: ONNX ecosystem member.
+            logo: mediatek.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Xiaomi
             homepage_url: https://www.mi.com
-            logo: hosted_logos/xiaomi.svg
-            description: ONNX ecosystem member.
+            logo: xiaomi.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Microsoft
             homepage_url: https://www.microsoft.com
-            logo: hosted_logos/microsoft.svg
+            logo: microsoft.svg
             description: Co-creator of ONNX and developer of ONNX Runtime.
 
           - name: MosaicML
             homepage_url: https://www.mosaicml.com
-            logo: hosted_logos/mosaicml.svg
-            description: ONNX ecosystem member.
+            logo: mosaicml.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: NVIDIA
             homepage_url: https://www.nvidia.com
-            logo: hosted_logos/nvidia.svg
+            logo: nvidia.svg
             description: ONNX ecosystem member and TensorRT developer.
 
           - name: NXP
             homepage_url: https://www.nxp.com
-            logo: hosted_logos/nxp.svg
-            description: ONNX ecosystem member.
+            logo: nxp.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: OctoML
             homepage_url: https://octoml.ai
-            logo: hosted_logos/octoml.svg
-            description: ONNX ecosystem member.
+            logo: octoml.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Oracle
             homepage_url: https://www.oracle.com
-            logo: hosted_logos/oracle.svg
-            description: ONNX ecosystem member.
+            logo: oracle.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Open AI Lab
             homepage_url: https://www.openailab.com
-            logo: hosted_logos/openailab.svg
-            description: ONNX ecosystem member.
+            logo: openailab.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Preferred Networks
             homepage_url: https://preferred.jp
-            logo: hosted_logos/preferrednetworks.svg
-            description: ONNX ecosystem member.
+            logo: preferrednetworks.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Recogni
             homepage_url: https://recogni.com
-            logo: hosted_logos/recogni.svg
-            description: ONNX ecosystem member.
+            logo: recogni.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Siemens
             homepage_url: https://www.siemens.com
-            logo: hosted_logos/siemens.svg
-            description: ONNX ecosystem member.
+            logo: siemens.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Sony
             homepage_url: https://www.sony.com
-            logo: hosted_logos/sony.svg
-            description: ONNX ecosystem member.
+            logo: sony.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Qualcomm
             homepage_url: https://www.qualcomm.com
-            logo: hosted_logos/qualcomm.svg
-            description: ONNX ecosystem member.
+            logo: qualcomm.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: QuantCo
             homepage_url: https://www.quantco.com
-            logo: hosted_logos/quantco.svg
-            description: ONNX ecosystem member.
+            logo: quantco.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: SAS
             homepage_url: https://www.sas.com
-            logo: hosted_logos/sas.svg
-            description: ONNX ecosystem member.
+            logo: sas.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: SenseTime
             homepage_url: https://www.sensetime.com
-            logo: hosted_logos/sensetime.svg
-            description: ONNX ecosystem member.
+            logo: sensetime.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Skymizer
             homepage_url: https://skymizer.com
-            logo: hosted_logos/skymizer.svg
-            description: ONNX ecosystem member.
+            logo: skymizer.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Synopsys
             homepage_url: https://www.synopsys.com
-            logo: hosted_logos/synopsys.svg
-            description: ONNX ecosystem member.
+            logo: synopsys.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Tencent
             homepage_url: https://www.tencent.com
-            logo: hosted_logos/tencent.svg
-            description: ONNX ecosystem member.
+            logo: tencent.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: TSINGMICRO
             homepage_url: https://www.tsingmicro.com
-            logo: hosted_logos/tsingmicro.svg
-            description: ONNX ecosystem member.
+            logo: tsingmicro.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Unity
             homepage_url: https://unity.com
-            logo: hosted_logos/unity.svg
-            description: ONNX ecosystem member.
+            logo: unity.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Verizon Media
             homepage_url: https://www.verizon.com
-            logo: hosted_logos/verizon.svg
-            description: ONNX ecosystem member.
+            logo: verizon.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: VMware
             homepage_url: https://www.vmware.com
-            logo: hosted_logos/vmware.svg
-            description: ONNX ecosystem member.
+            logo: vmware.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Wolfram
             homepage_url: https://www.wolfram.com
-            logo: hosted_logos/wolfram.svg
-            description: ONNX ecosystem member.
+            logo: wolfram.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Yandex
             homepage_url: https://yandex.com
-            logo: hosted_logos/yandex.svg
-            description: ONNX ecosystem member.
+            logo: yandex.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Zama
             homepage_url: https://zama.ai
-            logo: hosted_logos/zama.svg
-            description: ONNX ecosystem member.
+            logo: zama.svg
+            description: Organization listed in the ONNX ecosystem.
 
           - name: Zetane
             homepage_url: https://zetane.com
-            logo: hosted_logos/zetane.svg
-            description: ONNX ecosystem member.
+            logo: zetane.svg
+            description: Organization listed in the ONNX ecosystem.

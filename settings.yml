@@ -1,6 +1,8 @@
 foundation: ONNX
 
-url: https://landscape.onnx.ai
+url: https://onnx.ai/landscape/
+base_path: /landscape
+description: Explore tools, runtimes, frameworks, and organizations in the ONNX ecosystem.
 
 images:
   favicon: https://onnx.ai/images/onnx-favicon.png
@@ -19,6 +21,7 @@ colors:
   color7: "rgba(0, 107, 182, 0.2)"
 
 grid_items_size: medium
+view_mode: card
 
 groups:
   - name: Frameworks & Tools
@@ -36,24 +39,17 @@ groups:
       - Hardware & Accelerators
       - Model Hubs
       - Cloud Services
-  - name: Members & Partners
+  - name: Ecosystem Organizations
     categories:
-      - Members & Partners
+      - Ecosystem Organizations
 
 logos_viewbox:
   adjust: true
   exclude: []
 
-upcoming_event:
-  name: ONNX Community Meeting
-  start: "2026-04-01"
-  end: "2026-04-01"
-  banner_url: https://onnx.ai/images/ONNX-Logo.svg
-  details_url: https://onnx.ai/calendar.html
-
 footer:
   links:
-    github: https://github.com/onnx/onnx
+    github: https://github.com/onnx/landscape
     homepage: https://onnx.ai
     slack: https://onnx.ai/slack.html
     twitter: https://twitter.com/onnxai
