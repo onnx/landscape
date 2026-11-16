@@ -24,11 +24,19 @@ landscape:
         items:
           - name: tf2onnx
             homepage_url: https://github.com/onnx/tensorflow-onnx
+            repo_url: https://github.com/onnx/tensorflow-onnx
             logo: tensorflow.svg
             description: Converts TensorFlow, Keras, and TFLite models to ONNX.
 
+          - name: sklearn-onnx
+            homepage_url: https://onnx.ai/sklearn-onnx/
+            repo_url: https://github.com/onnx/sklearn-onnx
+            logo: onnx.svg
+            description: Converts scikit-learn models and pipelines to ONNX.
+
           - name: ONNXMLTools
             homepage_url: https://github.com/onnx/onnxmltools
+            repo_url: https://github.com/onnx/onnxmltools
             logo: onnx.svg
             description: Converts scikit-learn, XGBoost, LightGBM, and CatBoost models to ONNX.
 
@@ -43,8 +51,15 @@ landscape:
         items:
           - name: ONNX Runtime
             homepage_url: https://github.com/microsoft/onnxruntime
+            repo_url: https://github.com/microsoft/onnxruntime
             logo: onnxruntime.svg
             description: Cross-platform, high-performance ML inference and training accelerator by Microsoft.
+
+          - name: ONNX Runtime GenAI
+            homepage_url: https://github.com/microsoft/onnxruntime-genai
+            repo_url: https://github.com/microsoft/onnxruntime-genai
+            logo: onnxruntime.svg
+            description: Generative AI extensions for running models with ONNX Runtime.
 
           - name: Intel OpenVINO
             homepage_url: https://docs.openvino.ai/
@@ -71,9 +86,10 @@ landscape:
             description: Open deep learning compiler stack that ingests ONNX models.
 
           - name: Torch-MLIR
-            homepage_url: https://github.com/llvm/torch-mlir
+            homepage_url: https://github.com/llvm/torch-mlir/blob/main/docs/importers/onnx_importer.md
+            repo_url: https://github.com/llvm/torch-mlir
             logo: llvm.svg
-            description: MLIR-based compiler for PyTorch models including ONNX export paths.
+            description: MLIR-based compiler infrastructure with an importer for ONNX models.
 
   - name: Hardware & Accelerators
     subcategories:
@@ -87,7 +103,7 @@ landscape:
           - name: Groq
             homepage_url: https://groq.com/products/
             logo: groq.svg
-            description: Groq LPU supports ONNX model deployment for high-throughput inference.
+            description: AI inference hardware and services; consult Groq documentation for supported models and deployment options.
 
           - name: Intel Habana Gaudi
             homepage_url: https://habana.ai/
@@ -119,8 +135,15 @@ landscape:
         items:
           - name: ONNX Script
             homepage_url: https://github.com/microsoft/onnxscript
+            repo_url: https://github.com/microsoft/onnxscript
             logo: microsoft.svg
             description: Author, transform, and rewrite ONNX graphs and functions using Python.
+
+          - name: ONNX IR
+            homepage_url: https://onnx.ai/ir-py/
+            repo_url: https://github.com/onnx/ir-py
+            logo: onnx.svg
+            description: Python in-memory representation for constructing, analyzing, and transforming ONNX models.
 
           - name: NVIDIA Graph Surgeon
             homepage_url: https://github.com/NVIDIA/TensorRT/tree/main/tools/onnx-graphsurgeon
@@ -138,8 +161,9 @@ landscape:
         items:
           - name: Netron
             homepage_url: https://github.com/lutzroeder/Netron
+            repo_url: https://github.com/lutzroeder/Netron
             logo: netron.svg
-            description: The most popular viewer for ONNX and other ML model formats.
+            description: Visualize ONNX and other machine learning model formats in a browser or desktop app.
 
           - name: VisualDL
             homepage_url: https://github.com/PaddlePaddle/VisualDL
@@ -149,7 +173,7 @@ landscape:
           - name: Zetane Viewer
             homepage_url: https://github.com/zetane/viewer
             logo: onnx.svg
-            description: Open-source 3D visualization for ONNX model computation graphs.
+            description: Free viewer for exploring ONNX model graphs and tensors in 3D.
 
   - name: Model Hubs
     subcategories:
@@ -175,9 +199,9 @@ landscape:
       - name: Cloud Services
         items:
           - name: Azure Machine Learning
-            homepage_url: https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx
+            homepage_url: https://learn.microsoft.com/en-us/azure/machine-learning/concept-onnx
             logo: microsoftazure.svg
-            description: Azure ML AutoML exports models to ONNX for cross-platform deployment.
+            description: Azure ML supports ONNX model conversion and deployment, including export for supported AutoML models.
 
           - name: AWS SageMaker
             homepage_url: https://docs.aws.amazon.com/sagemaker/
@@ -185,18 +209,23 @@ landscape:
             description: Amazon SageMaker supports ONNX model training and deployment.
 
           - name: Google Vertex AI
-            homepage_url: https://cloud.google.com/vertex-ai
+            homepage_url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/using-nvidia-triton
             logo: googlecloud.svg
-            description: Google Vertex AI supports ONNX model deployment on Google Cloud.
+            description: Vertex AI endpoints can serve ONNX models using a Triton custom container.
 
   - name: Validation & Testing
     subcategories:
       - name: Validation & Testing
         items:
           - name: ONNX Checker
-            homepage_url: https://github.com/onnx/onnx
+            homepage_url: https://onnx.ai/onnx/api/checker.html
             logo: onnx.svg
             description: Built-in model validator for checking ONNX spec compliance.
+
+          - name: ONNX Shape Inference
+            homepage_url: https://onnx.ai/onnx/repo-docs/ShapeInference.html
+            logo: onnx.svg
+            description: Infer available shape and type information for values in ONNX graphs.
 
           - name: ONNX Backend Test
             homepage_url: https://github.com/onnx/onnx/tree/main/onnx/backend/test
